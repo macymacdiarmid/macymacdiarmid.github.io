@@ -9,6 +9,8 @@ div.home-container {
 	position: relative;
 	min-height: 100vh;
 	background-color: #ff0000;
+	max-width: 70rem;
+	margin: auto;
 }
 
 div.container { 
@@ -28,7 +30,7 @@ main {
 
 img {
     width: 100%; /*Please leave this line.*/
-     display: block;
+    display: block;
 }
 
 header {

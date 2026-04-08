@@ -1,0 +1,101 @@
+/*CSS DOCUMENT*/
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 64em;
+	margin: 0 auto;
+}
+
+header {
+	flex: 1 0 100%;
+	padding: 2.5em 1.5em 0em;
+}
+
+article {
+	flex: 2 0 70%;
+	min-width: 0;
+	padding: 0 1.5em;
+}
+
+article figure {
+	margin: 0 0 1em 0;
+}
+
+article ol {
+	padding-left: 0em;
+}
+
+aside {                                                            
+      flex: 1 0 30%;
+      min-width: 0;                                                  
+      padding: 0;                                                    
+	}
+
+aside section {
+      background-color: #e8e8e8;
+      margin-bottom: 1em;
+	  padding: 1em
+  }
+
+
+aside section a {
+	display: block;
+	text-decoration: none;
+	color: #222;
+}
+
+aside section figure {
+	margin: 0;
+}
+
+aside section h3 {
+	margin: 0;
+	padding: 1em 0 0em;
+}
+
+aside section p {
+	margin: 0;
+	padding: 0 0 0.5em;
+}
+
+footer {
+	flex: 1 0 100%;
+	border-top: 0.0625em solid #ccc;
+	padding: 1em 2em;
+}
+
+footer a {
+	color: #222;
+	text-decoration: none;
+}
+
+@media (max-width: 50em) {                                
+    article {                                                      
+        flex: 1 0 100%;
+        padding: 1em;                                              
+      }                                                     
+
+    aside {
+        flex: 1 0 100%;
+      }
+  }

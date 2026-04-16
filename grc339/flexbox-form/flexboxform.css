@@ -1,0 +1,141 @@
+/*CSS DOCUMENT*/
+
+body {
+    font-family: sans-serif;
+    line-height: 1.4em;
+    color: #222222;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+div.container {
+    max-width: 40em;
+    margin: 1em;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+section {
+    background: #eeeeee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+    margin-top: 0;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section.personal-info ul li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6em;
+}
+
+section.personal-info ul li:last-child {
+    margin-bottom: 0;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+    box-sizing: border-box;
+    width: 100%;
+    background: #fcfcfc;
+    border: 1px solid #e8e8e8;
+    padding: 0.4em;
+    font-family: sans-serif;
+    color: #777777;
+    font-size: 1em;
+}
+
+
+section.order ul,
+section.method ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.order ul li,
+section.method ul li {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+
+section.order ul li input,
+section.method ul li input {
+    margin-right: 0.4em;
+    flex-shrink: 0;
+}
+
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 6em;
+    background: #fcfcfc;
+    border: 1px solid #e8e8e8;
+    padding: 0.4em;
+    font-family: sans-serif;
+    color: #777777;
+    margin-top: 0.5em;
+}
+
+
+button {
+    padding: 0.4em 0.8em;
+    font-size: 1em;
+    background: #fafafa;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 40em) {
+
+    div.container {
+        margin: 1em auto;
+    }
+
+
+    section.personal-info ul li {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section.personal-info ul li label {
+        flex: 0 0 9em;
+    }
+
+    section.personal-info ul li input[type="text"],
+    section ul li input[type="email"],
+    section ul li input[type="tel"],
+    section ul li select {
+        flex: 1;
+        width: auto;
+    }
+
+
+    section.order ul li,
+    section.method ul li {
+        flex: 0 0 50%;
+    }
+
+}

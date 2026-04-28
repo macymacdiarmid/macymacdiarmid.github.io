@@ -1,0 +1,267 @@
+/* CSS document */
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Base */
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+div.container {
+    max-width: 38rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Header */
+
+header {
+    padding: 1rem 1rem 0.75rem 1rem;
+}
+
+h1 {
+    width: 8rem;
+    margin-bottom: 0.75rem;
+}
+
+h1 a {
+    display: block;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #4a6fa5;
+    line-height: 1.8;
+}
+
+/* Homepage: main story */
+
+section.mainstory a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+section.mainstory figure {
+    margin-bottom: 0;
+}
+
+section.mainstory h2 {
+    font-family: serif;
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin-bottom: 0.3rem;
+    padding: 0.75rem 1rem 0 1rem;
+    color: #2a5a8c;
+}
+
+section.mainstory p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+    padding: 0.4rem 1rem 1rem 1rem;
+}
+
+/* Homepage: secondary stories */
+
+section.secondary a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+section.secondary figure {
+    margin-bottom: 0;
+}
+
+section.secondary h2 {
+    font-family: serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+    padding: 0.6rem 1rem 0 1rem;
+    color: #2a5a8c;
+}
+
+section.secondary p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+    padding: 0.3rem 1rem 1rem 1rem;
+}
+
+/* Homepage: tertiary stories */
+
+section.tertiary {
+    border-top: 0.1rem solid #4a6fa5;
+    margin: 0 1rem;
+    padding: 0.75rem 0 0.75rem 0;
+}
+
+section.tertiary a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+section.tertiary h2 {
+    font-family: serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+    color: #2a5a8c;
+}
+
+section.tertiary p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+}
+
+/* Article (story page) */
+
+article {
+    padding: 0;
+}
+
+article figure {
+    margin-top: 1rem;
+}
+
+article figure:first-child {
+    margin-top: 0;
+}
+
+article figcaption {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: #555555;
+    padding: 0.4rem 1rem 0.5rem 1rem;
+    line-height: 1.4;
+}
+
+article h2 {
+    font-family: serif;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    padding: 0 1rem;
+    color: #2a5a8c;
+}
+
+article p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 0.75rem;
+    padding: 0 1rem;
+}
+
+/* Aside (story page) */
+
+aside {
+    background-color: #dcdcf0;
+    padding-top: 0.5rem;
+}
+
+aside section.secondary {
+    border-bottom: none;
+}
+
+aside section.secondary h2 {
+    font-family: serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #2a5a8c;
+    padding: 0.4rem 1rem 0.2rem 1rem;
+    margin-bottom: 0;
+}
+
+aside section.secondary p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    padding: 0 1rem 1rem 1rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+    padding: 1rem;
+    background-color: #4a6a85;
+}
+
+footer p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Wide screen */
+
+@media (min-width: 35rem) {
+
+    nav ul li {
+        display: inline;
+        padding-right: 1rem;
+    }
+
+    section.mainstory figure {
+        padding: 0 1rem;
+    }
+
+    section.secondary figure {
+        padding: 0 1rem;
+    }
+
+    article figure {
+        padding: 0 1rem;
+    }
+
+    article figure:first-child {
+        padding: 0 1rem;
+    }
+
+    article figcaption {
+        padding: 0.4rem 0 0.5rem 0;
+    }
+
+    aside section.secondary figure {
+        padding: 0 1rem;
+    }
+
+}

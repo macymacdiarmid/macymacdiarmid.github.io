@@ -122,7 +122,7 @@ section.secondary p {
 /* Homepage: tertiary stories */
 
 section.tertiary {
-    border-top: 0.1rem solid #4a6fa5;
+    border-top: 1px solid #4a6fa5;
     margin: 0 1rem;
     padding: 0.75rem 0 0.75rem 0;
 }

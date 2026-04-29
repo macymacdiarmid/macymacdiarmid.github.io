@@ -233,6 +233,8 @@ footer p {
 
 /* Wide screen */
 
+/* Wide screen */
+
 @media (min-width: 35rem) {
 
     nav ul li {
@@ -260,8 +262,13 @@ footer p {
         padding: 0.4rem 0 0.5rem 0;
     }
 
-    aside section.secondary figure {
-        padding: 0 1rem;
-    }
+   aside {
+    margin: 0 1rem;
+}
+
+aside section.secondary figure {
+    padding: 0 0.5rem;
+}
+
 
 }

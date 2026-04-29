@@ -201,6 +201,10 @@ aside section.secondary {
     border-bottom: none;
 }
 
+aside section.secondary figure {
+    padding: 0 0.5rem;
+}
+
 aside section.secondary h2 {
     font-family: serif;
     font-size: 1.5rem;

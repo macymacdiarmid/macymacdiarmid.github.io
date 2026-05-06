@@ -280,8 +280,8 @@ footer p {
     footer {
         margin: 0 .5rem;
     }
-
-    @media only screen and (min-width: 60em) {
+/* wider screen */
+@media only screen and (min-width: 60em) {
         div.home-container {
             max-width: 80em;
             padding: 0 1em;

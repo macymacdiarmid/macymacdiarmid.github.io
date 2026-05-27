@@ -255,6 +255,166 @@ footer p {
     color: #cdedf6;
 }
 
+/* Photo Gallery */
+
+.gallery-intro {
+    padding: 0.75rem 1rem 0 1rem;
+}
+
+.gallery-intro h2 {
+    font-family: 'freight-display-pro', serif;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    color: #d84727;
+    margin-bottom: 0.4rem;
+}
+
+.gallery-intro p {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #042a2b;
+    padding-bottom: 0.75rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.gallery figure {
+    margin: 0;
+}
+
+.gallery figure img {
+    height: 12rem;
+    object-fit: cover;
+}
+
+.gallery figcaption {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: #5eb1bf;
+    padding: 0.3rem 0 0.5rem 0;
+    line-height: 1.4;
+}
+
+/* Newsletter */
+
+.newsletter-hero {
+    margin: 0;
+}
+
+.newsletter-form {
+    padding: 0.75rem 1rem 1rem 1rem;
+}
+
+.newsletter-form h2 {
+    font-family: 'freight-display-pro', serif;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    color: #d84727;
+    margin-bottom: 0.4rem;
+}
+
+.newsletter-form p {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #042a2b;
+    margin-bottom: 1.25rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-field label {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    color: #042a2b;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.form-field input {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    color: #042a2b;
+    background-color: #f8f3e9;
+    border: 1px solid #042a2b;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #ef7b45;
+    padding: 0.75rem 1rem;
+}
+
+legend {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    color: #042a2b;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0 0.25rem;
+}
+
+.form-check {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 0.6rem;
+}
+
+.form-check:last-child {
+    margin-bottom: 0;
+}
+
+.form-check input[type="checkbox"] {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+    accent-color: #d84727;
+    width: 1rem;
+    height: 1rem;
+}
+
+.form-check label {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #042a2b;
+}
+
+button[type="submit"] {
+    font-family: 'acumin-pro', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f8f3e9;
+    background-color: #d84727;
+    border: none;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: #ef7b45;
+}
+
 /* Wide screen: medium */
 
 @media (min-width: 35rem) {
@@ -262,6 +422,11 @@ footer p {
     nav ul li {
         display: inline;
         padding-right: .5rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
     }
 
     section.mainstory figure {
@@ -401,5 +566,17 @@ footer p {
 
     aside section.tertiary {
         border-top-color: #ef7b45;
+    }
+
+    div.container main {
+        grid-column: 1/3;
+    }
+
+    .gallery figure img {
+        height: 16rem;
+    }
+
+    .newsletter-form {
+        max-width: 40em;
     }
 }

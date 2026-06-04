@@ -611,3 +611,165 @@ button[type="submit"]:hover {
         max-width: 40em;
     }
 }
+
+/* Dark mode */
+
+@media screen and (prefers-color-scheme: dark) {
+
+    h1 {
+        background-image: url("gbl-logo-dark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    h1 img {
+        opacity: 0;
+    }
+
+    body {
+        background-color: #042a2b;
+        color: #f8f3e9;
+    }
+
+    div.container, div.home-container {
+        background-color: #042a2b;
+    }
+
+    nav ul li a {
+        color: #f8f3e9;
+    }
+
+    section.mainstory a {
+        color: #f8f3e9;
+    }
+
+    section.mainstory h2 {
+        color: #ef7b45;
+    }
+
+    section.mainstory p {
+        color: #f8f3e9;
+    }
+
+    section.secondary a {
+        color: #f8f3e9;
+    }
+
+    section.secondary h2 {
+        color: #ef7b45;
+    }
+
+    section.secondary p {
+        color: #f8f3e9;
+    }
+
+    section.tertiary {
+        border-top-color: #5eb1bf;
+    }
+
+    section.tertiary a {
+        color: #f8f3e9;
+    }
+
+    section.tertiary h2 {
+        color: #ef7b45;
+    }
+
+    section.tertiary p {
+        color: #f8f3e9;
+    }
+
+    article h2 {
+        color: #ef7b45;
+    }
+
+    article p {
+        color: #f8f3e9;
+    }
+
+    article figcaption {
+        color: #5eb1bf;
+    }
+
+    aside {
+        background-color: #021d1e;
+    }
+
+    aside section.secondary h2,
+    aside section.tertiary h2 {
+        color: #ef7b45;
+    }
+
+    aside section.secondary a,
+    aside section.tertiary a {
+        color: #f8f3e9;
+    }
+
+    aside section.secondary p {
+        color: #f8f3e9;
+    }
+
+    aside section.tertiary {
+        border-top-color: #5eb1bf;
+    }
+
+    footer {
+        background-color: #021d1e;
+    }
+
+    footer p {
+        color: #f8f3e9;
+    }
+
+    .gallery-intro h2 {
+        color: #ef7b45;
+    }
+
+    .gallery-intro p {
+        color: #f8f3e9;
+    }
+
+    .gallery-main figcaption {
+        color: #5eb1bf;
+    }
+
+    .newsletter-form h2 {
+        color: #ef7b45;
+    }
+
+    .newsletter-form p {
+        color: #f8f3e9;
+    }
+
+    .form-field label {
+        color: #f8f3e9;
+    }
+
+    .form-field input {
+        background-color: #042a2b;
+        color: #f8f3e9;
+        border-color: #5eb1bf;
+    }
+
+    legend {
+        color: #f8f3e9;
+    }
+
+    fieldset {
+        border-color: #5eb1bf;
+    }
+
+    .form-check label {
+        color: #f8f3e9;
+    }
+
+    button[type="submit"] {
+        background-color: #ef7b45;
+        color: #042a2b;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #d84727;
+        color: #f8f3e9;
+    }
+}
